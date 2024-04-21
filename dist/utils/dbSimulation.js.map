@@ -1,0 +1,1 @@
+{"version":3,"file":"dbSimulation.js","sourceRoot":"","sources":["../../src/utils/dbSimulation.ts"],"names":[],"mappings":";;AAYE,MAAM,KAAK,GAAW;IACpB;QACE,EAAE,EAAE,CAAC;QACL,IAAI,EAAE,WAAW;QACjB,aAAa,EAAE;YACb,EAAE,EAAE,EAAE,CAAC,EAAE,OAAO,EAAE,gBAAgB,EAAE;YACpC,EAAE,EAAE,EAAE,CAAC,EAAE,OAAO,EAAE,gBAAgB,EAAE;SACrC;KACF;CAEF,CAAC;AAEF,kBAAe,KAAK,CAAC"}

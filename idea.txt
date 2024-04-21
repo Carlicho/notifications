@@ -1,0 +1,20 @@
+Se necesita una aplicacion que permita la generacion y agregacion de mensajes para usuarios que pueden obtenerse desde una base de datos o de un servicio
+
+Los mensajes deberan tener un origen, un destinatario, un titulo, una descripcion, y una identificacion si fue leido o no, y de forma opcional, una direccion a donde redirigir. Tambien deberiamos poder elegir si el usuario al leerlo, debe enviar una notificacion, o quizas incluso un request a una url en particula (ej, un ok para continuar algun proceso)
+
+Se debe poder dar de alta los remitentes con distintos metodos de seguridad, o minimamente por ip. Podra utilizarse una combinacion de llaves para asegurarse que el mensaje viene de una aplicacion autorizada.
+
+Los servicios deberan permitir crear mensajes nuevos, eliminarlos (baja logica), marcarlos como leidos, obtenerlos paginados, y obtener tambien el total de mensajes de un usuario. 
+
+La aplicacion debe ser escalable.
+
+El usuario debera tener como informacion:
+Id: Identificador unico
+nombreDeUsuario: que se utilizara como referencia (debe obtenerse de algun origen de datos de usuario al registrarlo o al enviarle la informacion por primera vez)
+nombre: El nombre se utilizara para los mensajes que se le envien al usuario de ser necesario (errores, informacion, advertencia, mails, etc)
+mail: direccion de email a donde se le enviara de forma opcional el mensaje
+
+Se deberan registrar los servicios que quieran integrarse con este servicio de notificaciones,
+en principio, la registracion sera simple, y debera enviarse el id del servicio, 
+aunque la idea mas adelante es generar una key que debera enviarse junto al mensaje 
+donde se verificara vs la clave privada en el registro de servicios.
